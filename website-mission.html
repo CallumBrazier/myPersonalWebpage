@@ -127,7 +127,7 @@
         <section id="body">
             <div id="aboutMe"> 
                 <main>
-                    <h1 class="headings"> Welcome </h1>
+                    <h1 class="headings header show-on-scroll"> Welcome </h1>
                     
                     <div id="hexagonWrap">
                         <div class="hexagon">
@@ -166,19 +166,30 @@
         
         <section>
             <div id="projects">
-                <h1 class="headings">Projects</h1>
+                <h1 class="headings header show-on-scroll">Projects</h1>
+                <div class="flexbox-container">
+                    <div>
+                        <a href="clock2.html" target="blank"><div class="flexbox-item flexbox-item1 inline-photo show-on-scroll"></div></a>
+                        <div><p class="flexbox-word flexbox-word1">Digital Clock</p></div>
+                    </div>
+                    <div>
+                        <div class="flexbox-item flexbox-item2 inline-photo show-on-scroll"></div>
+                        <div><p class="flexbox-word flexbox-word2">Under Construction</p></div>
+                    </div>
+                </div>
             </div>
         </section>
         
         <section>
             <div id="contact">
-                <h1 class="headings">Get in touch!</h1>
+                <h1 class="headings header show-on-scroll">Get in touch!</h1>
                 <div id="form">
                     <form method="post"">
                     <input type="text" id="fName" name="name" default="name" placeholder=" Name" required><br>
                     <input type="email" id="email" name="email" placeholder=" Email address" required><br>
                     <textarea id="comment" name="comment" placeholder=" Write your message here"></textarea><br>
-                    <button type="button" id="submitBtn" onclick="alert('Submitted successfully')">Submit</button>
+                    <button type="button" id="submitBtn" onclick="submitMessage()">Submit</button>
+                    <div id="message"></div>
                     </form>
                 </div>
             </div>
@@ -186,22 +197,24 @@
         
         <footer class="bottomBar">
                 <ul class="bottomBar-nav">
-                    <a class="bottomBar-link" href="www.facebook.com/braziercallum/">
+                    <a class="bottomBar-link" href="https://www.facebook.com/braziercallum/" target="blank">
                         <li class="bottomBar-list">
                             <i class="fab fa-facebook-square" id="fbIcon"></i>
                         </li>
                     </a>
-                    <a class="bottomBar-link" href="//:httpswww.linkedin.com/callumbrazier">
+                    <a class="bottomBar-link" href="https://www.linkedin.com/braziercallum" target="blank">
                         <li class="bottomBar-list">
                             <i class="fab fa-linkedin" id="linkedInIcon"></i>
                         </li>
                     </a>
-                    <a class="bottomBar-link" href="www.github.com/callumbrazier">
+                    <a class="bottomBar-link" href="https://www.github.com/callumbrazier" target="blank">
                         <li class="bottomBar-list">
                             <i class="fab fa-git-square" id="githubIcon"></i>
                         </li>
                     </a>
                 </ul>
         </footer>
+
+        <script src="website-mission.js"></script>
     </body>
 </html>
